@@ -11,6 +11,8 @@ const getUsersRouter = () => {
    * /api/users:
    *   post:
    *     summary: Create a new user
+   *     tags:
+   *      - Users
    *     responses:
    *       200:
    *         description: User was created successfully.
@@ -34,6 +36,8 @@ const getUsersRouter = () => {
    * /api/users:
    *   get:
    *     summary: Get all users
+   *     tags:
+   *       - Users
    *     responses:
    *       200:
    *         description: Request was successfully handled.
@@ -48,6 +52,8 @@ const getUsersRouter = () => {
    * /api/users/:uid:
    *   get:
    *     summary: Get user by id
+   *     tags:
+   *        - Users
    *     responses:
    *       200:
    *         description: Request was successfully handled.
@@ -69,6 +75,8 @@ const getUsersRouter = () => {
    * /api/users/:uid:
    *   put:
    *     summary: Modify user by id
+   *     tags:
+   *        - Users
    *     responses:
    *       200:
    *         description: Request was successfully handled.
@@ -98,6 +106,8 @@ const getUsersRouter = () => {
    * /api/users/:uid:
    *   delete:
    *     summary: Delete user by id
+   *     tags:
+   *       - Users
    *     responses:
    *       200:
    *         description: Request was successfully handled.
