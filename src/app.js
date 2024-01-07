@@ -1,5 +1,6 @@
 // node_modules
 const express = require("express");
+const cors = require("cors");
 // controllers
 const { getUsersRouter } = require("./routes/usersRouter");
 const { getRolesRouter } = require("./routes/rolesRouter");
@@ -21,6 +22,7 @@ const options = {
 const swaggerSpec = swaggerJSDoc(options);
 
 const app = express();
+app.use(cors());
 
 app.use("/static", express.static("./src/static/"));
 app.use(express.json());
