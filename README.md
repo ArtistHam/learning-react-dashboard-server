@@ -14,3 +14,4 @@ Open http://localhost:5000/api/swagger/ to see Swagger API documentation.
 - [x] CRUD for roles
 - [ ] Mock auth (JWT)
 - [ ] User static images
+- [ ] Profile endpoints
